@@ -8,6 +8,7 @@ import { HomeComponent } from './modules/home/home.component';
 import { LabComponent } from './modules/lab/lab.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
+import { CarouselComponent } from './shared/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HeaderComponent } from './shared/header/header.component';
     FooterComponent,
     HomeComponent,
     LabComponent,
-    AudiovisualWorksComponent
+    AudiovisualWorksComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

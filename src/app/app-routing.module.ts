@@ -8,25 +8,15 @@ import { LabComponent } from './modules/lab/lab.component';
 const routes: Routes = [
   {
     path: '',
-    component: AppComponent,
-    children: [
-      {
-        path: '',
-        component: HomeComponent
-      },
-      {
-        path: 'lab',
-        component: LabComponent
-      },
-      {
-        path: 'audiovisual-works',
-        component: AudiovisualWorksComponent
-      },
-      {
-        path: '**',
-        redirectTo: '/'
-      }
-    ]
+    component: HomeComponent
+  },
+  {
+    path: 'lab',
+    component: LabComponent
+  },
+  {
+    path: 'audiovisual-works',
+    component: AudiovisualWorksComponent
   },
   {
     path: '**',
