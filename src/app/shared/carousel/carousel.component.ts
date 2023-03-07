@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
     selector: 'app-carousel',
     templateUrl: './carousel.component.html',
-    styleUrls: ['./carousel.component.sass']
+    styleUrls: ['./carousel.component.sass'],
+    encapsulation: ViewEncapsulation.None
 })
 export class CarouselComponent {
 
@@ -14,14 +15,11 @@ export class CarouselComponent {
     }
 
     public images: string[] = [
-        'assets/img/_MG_2241.png',
-        'assets/img/_MG_9056.JPG',
-        'assets/img/DSC00291.JPG',
-        'assets/img/DSC00363.JPG',
-        'assets/img/DSC01406.png',
-        'assets/img/DSC03531.jpg',
-        'assets/img/DSC03638.jpg',
-        'assets/img/DSC03653-2.jpg',
+        'assets/img/horizontal/workingImage1.png',
+        'assets/img/horizontal/workingImage2.png',
+        'assets/img/horizontal/workingImage3.png',
+        'assets/img/horizontal/workingImage4.png',
+        'assets/img/horizontal/workingImage5.png',
     ];
 
     public customOptions: OwlOptions = {
