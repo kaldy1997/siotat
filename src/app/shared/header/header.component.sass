@@ -14,6 +14,21 @@
 	justify-content: space-around
 	font-size: 20px
 	padding-top: 20px
+	a
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			left: 50%
+			bottom: 0
+			height: 2px
+			width: 100%
+			background-color: black
+			transform: translateX(-50%) scaleX(0)
+			transform-origin: center
+			transition: transform 0.1s ease-out
+		&:hover::after
+			transform: translateX(-50%) scaleX(1)
 
 .imageOverlapped
 	position: absolute
@@ -23,7 +38,7 @@
 	width: 100%
 	display: flex
 	justify-content: center
-	// opacity: 20%
+	opacity: 60%
 	img
-		// background-color: white
-
+		background-color: white
+		height: 75px
