@@ -20,7 +20,6 @@
     "@angular/router": "~13.3.0",
     "angular-animations": "^0.11.0",
     "animate.css": "^4.1.1",
-    "ngx-owl-carousel-o": "^7.0.4",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

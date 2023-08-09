@@ -5,4 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.sass']
 })
-export class FooterComponent { }
+export class FooterComponent {
+
+  public sendMail(): void {
+    window.location.href = 'mailto:siotatinfointerna@gmail.com';
+  }
+}
