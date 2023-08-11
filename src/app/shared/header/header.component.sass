@@ -13,7 +13,7 @@
 	display: flex
 	justify-content: space-around
 	font-size: 20px
-	padding-top: 20px
+	padding: 20px 0
 	a
 		position: relative
 		&::after
@@ -42,3 +42,7 @@
 	img
 		background-color: white
 		height: 75px
+
+@media (max-width: 550px)
+	.imageOverlapped img
+		height: 12vw
