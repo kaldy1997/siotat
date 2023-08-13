@@ -1,16 +1,22 @@
 .footer-wrapper
   display: flex
   justify-content: center
-  padding: 40px 
-  font-size: 36px
+  padding: 40px
+  padding-bottom: 0px
+  @media (max-width: 550px)
+    padding: 0
+  span
+    font-size: 36px
 
 .brands
   display: flex
   justify-content: space-between
   text-decoration: none
-  .image-container
+  .social-container
     position: relative
     display: inline-block
+    .youtube
+      width: 56px
     img
       cursor: pointer
       height: 45px
@@ -25,10 +31,10 @@
       height: 2px
       background-color: #000
       transition: width 0.3s ease
-
     img:hover::before
       width: 100%
       left: 0
+
 
 @media (max-width: 550px)
   .footer-wrapper

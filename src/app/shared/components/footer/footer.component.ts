@@ -10,4 +10,8 @@ export class FooterComponent {
   public sendMail(): void {
     window.location.href = 'mailto:siotatinfointerna@gmail.com';
   }
+
+  public openLink(link: string): void {
+    window.open(link);
+  }
 }

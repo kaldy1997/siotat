@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UtilsService } from 'src/app/shared/services/utils.service';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  public isMobile: boolean;
+
+  constructor() {
+    this.isMobile = UtilsService.isMobileDevice();
+  }
 }

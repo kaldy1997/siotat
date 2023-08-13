@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { trabajosVideoclips } from 'src/app/models/trabajo-videoclips.model';
+import { UtilsService } from 'src/app/shared/services/utils.service';
 
 @Component({
   selector: 'app-audiovisual-works',
@@ -7,18 +7,23 @@ import { trabajosVideoclips } from 'src/app/models/trabajo-videoclips.model';
   styleUrls: ['./audiovisual-works.component.sass']
 })
 export class AudiovisualWorksComponent {
-  public trabajosVideoclips: trabajosVideoclips[]
-  constructor() {
-    this.trabajosVideoclips = [
-    {
-      title: 'Titulo1',
-      artist: 'Autor'
-    },
 
-    {
-      title: 'Titulo2',
-      artist: 'Autor'
-    }
+  public youtubeUrls: string[]
+  public isMobile: boolean;
+
+  constructor() {
+    this.isMobile = UtilsService.isMobileDevice();
+    this.youtubeUrls = [
+      'SBPiRH78IlA',
+      'hRHNjIt_kTs',
+      'yx2a55JtsRM',
+      'U6XylxUckBI',
+      'ENvXIBtyR5M',
+      'MJlrrWR7Bz0',
+      'U3WLNvW2BeI',
+      '3tSgdkdCJpE',
+      'qEjgpxoGGxs',
+      'RPRnR7l-k_s'
     ]
   }
 }
