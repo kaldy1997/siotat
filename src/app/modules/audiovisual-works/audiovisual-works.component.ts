@@ -23,7 +23,17 @@ export class AudiovisualWorksComponent {
       'U3WLNvW2BeI',
       '3tSgdkdCJpE',
       'qEjgpxoGGxs',
-      'RPRnR7l-k_s'
+      'RPRnR7l-k_s',
+      'ZsvxQeI6U5s',
+      'yF_nCgsbTy4',
+      'zZH7BBhLXxk',
+      'en015ZAUZj0',
+      'r8xqo3fIdqw',
+      'UJpX-XlA7u0',
+      'CII77o-HSNo',
+      'L0US--V6i_U',
+      'srvODmmblnE',
+      '2FOEjoXI-oQ'
     ]
   }
 }
