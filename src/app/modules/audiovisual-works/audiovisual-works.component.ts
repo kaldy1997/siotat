@@ -13,7 +13,7 @@ export class AudiovisualWorksComponent {
 
   constructor() {
     this.isMobile = UtilsService.isMobileDevice();
-    this.youtubeUrls = [
+    const urls = [
       'SBPiRH78IlA',
       'hRHNjIt_kTs',
       'yx2a55JtsRM',
@@ -33,7 +33,11 @@ export class AudiovisualWorksComponent {
       'CII77o-HSNo',
       'L0US--V6i_U',
       'srvODmmblnE',
-      '2FOEjoXI-oQ'
-    ]
+      '2FOEjoXI-oQ',
+      'W4BlAFZ5wR8',
+      'VNz1Z-4oQ6Q',
+      'yMlzRdTRq_A'
+    ];
+    this.youtubeUrls = urls.sort(() => Math.random() - 0.5);
   }
 }
